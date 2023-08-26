@@ -66,7 +66,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, title, subTitle, description, buttonText, menu }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -104,7 +104,7 @@ export class SenderLayer extends ListenerLayer {
         { to, text }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -124,7 +124,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { idUser, poll }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -199,7 +199,7 @@ export class SenderLayer extends ListenerLayer {
         { to, base64, filename, description }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -267,7 +267,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, base64, filename, description }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         reject(result);
       } else {
         resolve(result);
@@ -333,7 +333,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, title, subtitle, buttons }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -355,7 +355,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, title, subtitle, footer, buttons }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -415,7 +415,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, content, passId, checkNumber, forcingReturn, delSend }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -471,7 +471,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { chatId, url, title, thumbnail }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -554,7 +554,7 @@ export class SenderLayer extends ListenerLayer {
         { to, base64, filename, caption, status }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -686,7 +686,7 @@ export class SenderLayer extends ListenerLayer {
         { to, base64, filename, caption, passId }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -771,7 +771,7 @@ export class SenderLayer extends ListenerLayer {
         { to, content, quotedMsg }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         reject(result);
       } else {
         resolve(result);
@@ -809,7 +809,7 @@ export class SenderLayer extends ListenerLayer {
           },
           { to, base64, passId }
         );
-        if (result['erro'] == true) {
+        if (result['erro'] == true && result['text'] != null) {
           reject(result);
         } else {
           resolve(result);
@@ -881,7 +881,7 @@ export class SenderLayer extends ListenerLayer {
             },
             { to, base64, passId, checkNumber, forcingReturn, delSend }
           );
-          if (result['erro'] == true) {
+          if (result['erro'] == true && result['text'] != null) {
             reject(result);
           } else {
             resolve(result);
@@ -945,7 +945,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, base64, filename, caption, type, passId }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         reject(result);
       } else {
         resolve(result);
@@ -1039,7 +1039,7 @@ export class SenderLayer extends ListenerLayer {
           delSend
         }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         reject(result);
       } else {
         resolve(result);
@@ -1104,7 +1104,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, contactsId, name }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         reject(result);
       } else {
         resolve(result);
@@ -1125,7 +1125,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, contacts }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         reject(result);
       } else {
         resolve(result);
@@ -1193,7 +1193,7 @@ export class SenderLayer extends ListenerLayer {
               },
               { _webb64, to, _met }
             );
-            if (result['erro'] == true) {
+            if (result['erro'] == true && result['text'] != null) {
               reject(result);
             } else {
               resolve(result);
@@ -1253,7 +1253,7 @@ export class SenderLayer extends ListenerLayer {
               },
               { _webb64, to, _met }
             );
-            if (result['erro'] == true) {
+            if (result['erro'] == true && result['text'] != null) {
               reject(result);
             } else {
               resolve(result);
@@ -1293,7 +1293,7 @@ export class SenderLayer extends ListenerLayer {
         },
         { to, latitude, longitude, title }
       );
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         reject(result);
       } else {
         resolve(result);
@@ -1328,7 +1328,7 @@ export class SenderLayer extends ListenerLayer {
         { chatId, checkNumber }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -1363,7 +1363,7 @@ export class SenderLayer extends ListenerLayer {
         { chatId, checkNumber }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -1398,7 +1398,7 @@ export class SenderLayer extends ListenerLayer {
         { chatId, checkNumber }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
@@ -1433,7 +1433,7 @@ export class SenderLayer extends ListenerLayer {
         { chatId }
       );
 
-      if (result['erro'] == true) {
+      if (result['erro'] == true && result['text'] != null) {
         return reject(result);
       } else {
         return resolve(result);
